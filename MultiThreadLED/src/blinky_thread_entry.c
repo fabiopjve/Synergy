@@ -5,8 +5,6 @@
 
 #include "blinky_thread.h"
 
-extern TX_THREAD red_thread;
-
 /*******************************************************************************************************************//**
  * @brief  Blinky example application
  *
@@ -28,6 +26,5 @@ void blinky_thread_entry(void)
         //g_ioport.p_api->pinWrite(IOPORT_PORT_06_PIN_00, IOPORT_LEVEL_HIGH);
         g_ioport.p_api->pinWrite(leds.p_leds[0], IOPORT_LEVEL_HIGH);
         tx_thread_sleep (100);
-        tx_thread_resume(&red_thread);
     }
 }
