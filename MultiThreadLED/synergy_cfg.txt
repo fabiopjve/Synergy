@@ -353,7 +353,7 @@ Synergy Configuration
     Symbol: red_thread
     Name: Red Thread
     Stack size (bytes): 1024
-    Priority: 1
+    Priority: 30
     Auto start: Enabled
     Time slicing interval (ticks): 1
     

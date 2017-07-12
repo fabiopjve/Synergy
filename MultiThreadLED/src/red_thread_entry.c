@@ -11,9 +11,9 @@ void red_thread_entry(void)
     {
         g_ioport.p_api->pinWrite(leds.p_leds[1], IOPORT_LEVEL_LOW);
         //R_BSP_SoftwareDelay(1000,BSP_DELAY_UNITS_MILLISECONDS);
-        tx_thread_sleep(100);
+        tx_thread_sleep(50);
         g_ioport.p_api->pinWrite(leds.p_leds[1], IOPORT_LEVEL_HIGH);
         //R_BSP_SoftwareDelay(1000,BSP_DELAY_UNITS_MILLISECONDS);
-        tx_thread_sleep(100);
+        tx_thread_sleep(50);
     }
 }

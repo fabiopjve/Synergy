@@ -21,8 +21,8 @@ void red_thread_create(void)
 
     /* Initialize each kernel object. */
 
-    tx_thread_create (&red_thread, (CHAR *) "Red Thread", red_thread_func, (ULONG) NULL, &red_thread_stack, 1024, 1, 1,
-                      1, TX_AUTO_START);
+    tx_thread_create (&red_thread, (CHAR *) "Red Thread", red_thread_func, (ULONG) NULL, &red_thread_stack, 1024, 30,
+                      30, 1, TX_AUTO_START);
 }
 
 static void red_thread_func(ULONG thread_input)
